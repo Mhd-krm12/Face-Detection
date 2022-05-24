@@ -24,7 +24,7 @@ detector = cv2.dnn.readNetFromCaffe(protoPath, modelPath)
 
 
 #image to matrix
-for file in get_image_files(r"C:\Users\Mhd Krm\Desktop\face_de\deneme"):
+for file in get_image_files(r"C:\............."):
     count = 0
     print(file)
     resim = cv2.imread(file)
@@ -62,7 +62,7 @@ for file in get_image_files(r"C:\Users\Mhd Krm\Desktop\face_de\deneme"):
 
                 #image labeling: create text file and write face coordinate
                 file_name=os.path.split(file)[-1].split('.')[-2]
-                selecteed_folder=(f"C:/Users/Mhd Krm/Desktop/face_de/deneme/{file_name}")  
+                selecteed_folder=(f"C:/......./{file_name}")  
                 fi= open(selecteed_folder+'.txt' , "a")
                 bx = ((endX - ((endX - startX)) / 2) / w )
                 by = ((endY - ((endY - startY)) / 2) / h ) 
